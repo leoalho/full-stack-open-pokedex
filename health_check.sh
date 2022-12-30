@@ -1,5 +1,5 @@
 #!/bin/bash
-RES=$(curl -s https://misty-morning-3342.fly.dev/health)
+RES=$(curl -s localhost:5000/health)
 if   [ $RES == "ok" ]; then
     echo $RES
     exit 0
