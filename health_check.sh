@@ -1,7 +1,7 @@
 #!/bin/bash
 RES=$(curl "https://misty-morning-3342.fly.dev/health")
-echo $RES
-if   [ "ok"=="ok" ]; then
+if   [ $RES=="ok" ]; then
+    echo $RES
     exit 0
 else
     exit 1
