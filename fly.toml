@@ -55,3 +55,11 @@ processes = []
     timeout = 2000
     tls_skip_verify = false
     [services.http_checks.headers]
+
+  [[services.script_checks]]
+    command       = "bash /app/health_check.sh"
+    args          = []
+    grace_period  = "10s"
+    interval      = "500s"
+    restart_limit = 0
+    timeout       = "1s"
