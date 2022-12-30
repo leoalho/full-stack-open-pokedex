@@ -60,6 +60,6 @@ processes = []
     command       = "/app/health_check.sh"
     variables     = []
     grace_period  = "5s"
-    interval      = "15s"
+    interval      = "1000s"
     restart_limit = 0
     timeout       = "1s"
