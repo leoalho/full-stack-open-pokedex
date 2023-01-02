@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RES=$(curl -s localhost:5000/health)
+RES=$(curl -s misty-morning-3342.fly.dev/health)
 if   [ $RES == "ok" ]; then
     echo $RES
     exit 0
